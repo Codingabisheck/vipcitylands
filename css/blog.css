@@ -4,17 +4,22 @@
 
 body {
   font-family: 'Noto Sans Tamil', system-ui, -apple-system, Roboto, 'Segoe UI', Arial;
-  background-color: #232121; /* Full black background */
-  color: #e7dfdf;              /* White text for visibility */
+  background-color: #232121;
+  /* Full black background */
+  color: #e7dfdf;
+  /* White text for visibility */
   margin: 0;
   line-height: 1.6;
 }
+
 h1 {
-  color: #b3b3b3; /* Grey color for main heading */
+  color: #b3b3b3;
+  /* Grey color for main heading */
 }
 
 h2 {
-  color: #ffffff; /* Pure white for sub-headings */
+  color: #ffffff;
+  /* Pure white for sub-headings */
 }
 
 
@@ -115,7 +120,8 @@ footer.article-footer {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 18px;
-  background-color: #25D366; /* WhatsApp Green */
+  background-color: #25D366;
+  /* WhatsApp Green */
   color: #fff;
   font-weight: 600;
   border-radius: 6px;
@@ -132,15 +138,18 @@ footer.article-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70vh; /* adjust as needed */
+  height: 70vh;
+  /* adjust as needed */
   position: relative;
   overflow: hidden;
-  padding: 0 5%; /* optional horizontal padding */
+  padding: 0 5%;
+  /* optional horizontal padding */
 }
 
 /* Text Div */
 .hero-text {
-  width: 50%;          /* left half for text */
+  width: 50%;
+  /* left half for text */
   z-index: 2;
 }
 
@@ -157,7 +166,8 @@ footer.article-footer {
 
 /* Image */
 .hero img {
-  width: 50%;          /* right half for image */
+  width: 50%;
+  /* right half for image */
   height: 100%;
   object-fit: cover;
   z-index: 1;
@@ -169,11 +179,12 @@ footer.article-footer {
     flex-direction: column;
     height: auto;
   }
-  
-  .hero-text, .hero img {
+
+  .hero-text,
+  .hero img {
     width: 100%;
   }
-  
+
   .hero-text h1 {
     font-size: 2rem;
     text-align: center;
@@ -191,6 +202,7 @@ footer.article-footer {
   .container {
     padding: 12px;
   }
+
   .card {
     padding: 18px;
   }
