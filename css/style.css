@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -236,6 +237,74 @@ body {
   text-align: center;
   font-weight: 600;
 }
+
+/* Common gallery styles (both pages) */
+.gallery {
+  display: grid;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Page 1 (page-home) - 4 columns */
+.page-home .gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Page 2 (page-projects) - 3 columns */
+.page-projects .gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .page-home .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .page-projects .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .page-home .gallery,
+  .page-projects .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-home .gallery,
+  .page-projects .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ===================== PROJECT SECTION ===================== */
 .project-section {
