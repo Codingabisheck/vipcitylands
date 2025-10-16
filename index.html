@@ -188,6 +188,14 @@ src="https://www.facebook.com/tr?id=1160323696051827&ev=PageView&noscript=1"
 
   <!-- External JS -->
   <script src="script.js"></script>
+
+
+  <script>
+document.getElementById('enquiryForm').addEventListener('submit', function() {
+    fbq('track', 'Lead');
+});
+</script>
+
 </body>
 
 </html>
