@@ -206,4 +206,4 @@ footer.article-footer {
   .card {
     padding: 18px;
   }
-}
+}@media (max-width: 700px){body{padding:14px!important}.card{padding:22px!important}.hero{display:block!important}.hero img{width:100%!important;height:auto!important}.hero-text{padding:22px!important}.card h1{font-size:32px!important}.card h2{font-size:24px!important}}
